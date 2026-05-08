@@ -30,5 +30,6 @@ export function fibsRec(n) {
     return [0, 1];
   }
   const rec = fibsRec(n - 1);
-  return rec.concat(rec[rec.length - 1] + rec[rec.length - 2]);
+  rec.push(rec[rec.length - 1] + rec[rec.length - 2]);
+  return rec;
 }
