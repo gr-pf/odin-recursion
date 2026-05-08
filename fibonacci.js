@@ -1,8 +1,8 @@
-function fibs(n) {
-  if (n === 0) {
+export function fibs(n) {
+  if (n === 1) {
     return [0];
   }
-  if (n === 1) {
+  if (n === 2) {
     return [0, 1];
   }
   const res = [0, 1];
@@ -11,5 +11,3 @@ function fibs(n) {
   }
   return res;
 }
-
-console.log(fibs(8));
